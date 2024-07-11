@@ -2,3 +2,4 @@
 ## Completed task:
 - Handle missing command
 - REPL (Read-Eval-Print Loop)
+- Exit builtin
