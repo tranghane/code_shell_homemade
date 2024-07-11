@@ -1,2 +1,4 @@
 # This is a homemade Linux codeshell
-- test commit
+## Completed task:
+- Handle missing command
+- REPL (Read-Eval-Print Loop)
