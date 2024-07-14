@@ -8,4 +8,3 @@
 - `cd src`
 - `g++ main.cpp -o my_program`
 - `./my_program`
-## Test coommit
