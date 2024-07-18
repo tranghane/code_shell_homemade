@@ -1,3 +1,3 @@
-/home/ocean/code_shell_homemade/code_shell_homemade/build/CMakeFiles/shell.dir
-/home/ocean/code_shell_homemade/code_shell_homemade/build/CMakeFiles/edit_cache.dir
-/home/ocean/code_shell_homemade/code_shell_homemade/build/CMakeFiles/rebuild_cache.dir
+/home/ocean/code_shell_homemade/build/CMakeFiles/shell.dir
+/home/ocean/code_shell_homemade/build/CMakeFiles/edit_cache.dir
+/home/ocean/code_shell_homemade/build/CMakeFiles/rebuild_cache.dir
