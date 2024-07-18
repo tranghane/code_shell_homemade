@@ -1,4 +1,4 @@
-# Install script for directory: /home/ocean/codecrafters-shell-cpp
+# Install script for directory: /home/ocean/code_shell_homemade/code_shell_homemade
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ocean/codecrafters-shell-cpp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ocean/code_shell_homemade/code_shell_homemade/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

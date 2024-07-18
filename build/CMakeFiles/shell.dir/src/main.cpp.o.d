@@ -1,5 +1,5 @@
 CMakeFiles/shell.dir/src/main.cpp.o: \
- /home/ocean/codecrafters-shell-cpp/src/main.cpp \
+ /home/ocean/code_shell_homemade/code_shell_homemade/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
