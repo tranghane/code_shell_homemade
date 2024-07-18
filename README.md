@@ -43,6 +43,7 @@ Note: This section is for stages 2 and beyond.
 - Echo builtin
 - Type builtin
 ## How to run program:
+- make sure to change the path in CMakeCache.txt
 - make sure to fix the path of your vcpkg in `your_shell.sh`
 - Run `./your_shell.sh` to run your program, which is implemented in
    `src/main.cpp`.
