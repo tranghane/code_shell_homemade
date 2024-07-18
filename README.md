@@ -42,6 +42,7 @@ Note: This section is for stages 2 and beyond.
 - Exit builtin
 - Echo builtin
 - Type builtin
+- Type builtin check for executable files
 ## How to run program:
 - make sure to change the path in CMakeCache.txt
 - make sure to fix the path of your vcpkg in `your_shell.sh`
