@@ -1,0 +1,3 @@
+/home/ocean/codecrafters-shell-cpp/build/CMakeFiles/shell.dir
+/home/ocean/codecrafters-shell-cpp/build/CMakeFiles/edit_cache.dir
+/home/ocean/codecrafters-shell-cpp/build/CMakeFiles/rebuild_cache.dir
