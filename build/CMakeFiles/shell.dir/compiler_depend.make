@@ -241,8 +241,18 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/fs_dir.h \
-  /usr/include/c++/11/bits/fs_ops.h
+  /usr/include/c++/11/bits/fs_ops.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc
 
+
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/c++/11/bits/fs_ops.h:
 
@@ -715,6 +725,8 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/c++/11/fstream:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 

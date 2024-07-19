@@ -7,7 +7,22 @@
 #include <map>
 #include <sstream>
 #include <filesystem>
+#include <cstdlib>
+#include <fstream>
 using namespace std;
+
+// get the argument of the input
+std::vector<std::string> split_string(const std::string &s, char delimiter)
+{
+  std::stringstream ss(s);
+  std::vector<std::string> return_vect;
+  std::string token;
+  while (getline(ss, token, delimiter))
+  {
+    return_vect.push_back(token);
+  }
+  return return_vect;
+}
 
 // check path from name
 std::string get_path(std::string fileName)
@@ -47,14 +62,19 @@ int main()
   std::map<string, string> commandToType = {
       {"echo", "a shell builtin"},
       {"exit", "a shell builtin"},
-      {"cat", "/bin/cat"},
       {"type", "a shell builtin"}};
   std::cout << "$ ";
+
+  // to get the arguments of the command
+  std::vector<std::string> arguments;
   while (true)
   {
 
     std::string input;
     std::getline(std::cin, input);
+
+    // get the argument
+    arguments = split_string(input, ' ');
 
     if (input.find("exit") == 0 && input[5] == '0' && input.length() == 6) // exit 0 builtin
     {
@@ -76,27 +96,51 @@ int main()
       const int TYPE_LEN = 5;
       std::string text = input.substr(TYPE_LEN);
 
-      if (commandToType.find(text) == commandToType.end())
-      { // if can't find
-        std::cout << text + ": not found" << std::endl;
+      if (commandToType.find(text) != commandToType.end())
+      { // if can find in dictionary     meaning one of the built in command
+        std::cout << arguments[1] << " is a shell builtin" << std::endl;
         std::cout << "$ ";
       }
       else
-      {
-        std::string path = get_path(input);
+      {                                            // if can't find
+        std::string path = get_path(arguments[1]); // Use arguments[1] here
         if (path.empty())
-        {
-          std::cout << input << " not found\n";
+        {                                              // if empty, meaning no such file
+          std::cout << arguments[1] << " not found\n"; // Use arguments[1] here
+          std::cout << "$ ";
         }
         else
-        {
+        { // one of the built in command
           std::cout << input << " is " << path << std::endl;
+          std::cout << "$ ";
         }
       }
     }
+
     else
     {
       std::cout << input << ": command not found\n";
+      std::string filepath;
+
+      // trying to run a program
+      std::string path_string = getenv("PATH");
+      std::vector<std::string> path = split_string(path_string, ':');
+      for (int i = 0; i < path.size(); i++)
+      {
+        filepath = path[i] + '/' + arguments[0];
+        std::ifstream file(filepath);
+        if (file.good())
+        {
+          // run the program using system
+          std::string command = "exec " + path[i] + '/' + input;
+          std::system(command.c_str());
+          break;
+        }
+        else if (i == path.size() - 1)
+        {
+          std::cout << arguments[0] << ": not found\n";
+        }
+      }
       std::cout << "$ ";
     }
   }
