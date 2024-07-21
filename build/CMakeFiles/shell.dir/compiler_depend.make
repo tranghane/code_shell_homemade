@@ -198,23 +198,13 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
   /usr/include/c++/11/chrono \
@@ -223,15 +213,20 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/libintl.h \
-  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/codecvt \
@@ -240,25 +235,20 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/fs_dir.h \
-  /usr/include/c++/11/bits/fs_ops.h \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc
+  /usr/include/c++/11/bits/fs_ops.h
 
-
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/c++/11/bits/fs_ops.h:
 
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/include/c++/11/array:
 
 /usr/include/c++/11/bits/locale_conv.h:
 
@@ -267,6 +257,8 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -278,19 +270,13 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/filesystem:
 
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
 /usr/include/c++/11/sstream:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/c++/11/array:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-/usr/include/c++/11/bits/stl_map.h:
-
-/usr/include/string.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -366,8 +352,6 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/alloc_traits.h:
 
-/usr/include/c++/11/map:
-
 /usr/include/c++/11/bits/ranges_base.h:
 
 /usr/include/c++/11/bits/range_access.h:
@@ -405,8 +389,6 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/clocale:
 
 /usr/include/c++/11/bits/iterator_concepts.h:
-
-/usr/include/c++/11/bits/stl_multimap.h:
 
 /usr/include/features.h:
 
@@ -520,9 +502,9 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/iosfwd:
 
-/usr/include/c++/11/bits/codecvt.h:
-
 /usr/include/c++/11/ctime:
+
+/usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -533,8 +515,6 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -579,8 +559,6 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/11/tuple:
-
-/usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/c++/11/type_traits:
 
@@ -711,8 +689,6 @@ CMakeFiles/shell.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/cstdlib:
 
 /usr/include/c++/11/bits/sstream.tcc:
-
-/usr/include/strings.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
