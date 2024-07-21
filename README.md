@@ -10,6 +10,9 @@
 - run a program in one of the PATH directory
 - pwd command
 ## How to run program:
+- download CMake
+- download vcpkg
+- make sure that the vcpkg/scripts/buildsystems/vcpkg.cmake file is in the same folder with code_shell_homemade
 - make sure to change the path in CMakeCache.txt by replacing INSERT_USER_FOLDER_NAME_HERE 
 - make sure to fix the path of your vcpkg in `your_shell.sh`
 - Run `./your_shell.sh` to run your program, which is implemented in
