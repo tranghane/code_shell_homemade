@@ -7,6 +7,6 @@
 # DON'T EDIT THIS!
 set -e
 # vcpkg & cmake are required. 
-cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=/home/ocean/vcpkg/scripts/buildsystems/vcpkg.cmake
+cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=/home/INSERT_USER_NAME_HERE/vcpkg/scripts/buildsystems/vcpkg.cmake
 cmake --build ./build
 exec ./build/shell "$@"
