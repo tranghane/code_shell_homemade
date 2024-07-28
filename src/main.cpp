@@ -88,7 +88,6 @@ int main()
     }
     else if (command == "cd")
     {
-
       handleCd(arguments);
     }
     else
