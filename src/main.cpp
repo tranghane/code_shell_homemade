@@ -28,8 +28,44 @@ void handleCd(const std::string &argument)
 {
   if (argument[0] == '/' && std::filesystem::exists(argument))
     WORKING_DIR = argument;
+  else if (argument[0] == '.')
+  {
+    if (argument == "./")
+    { // ./ mean do nothin
+    }
+    else if (argument == "../")
+    { // move back
+      // Move back one level, but prevent going beyond root
+      size_t last_slash = WORKING_DIR.find_last_of('/');
+      if (last_slash != std::string::npos && last_slash > 0)
+        WORKING_DIR = WORKING_DIR.substr(0, last_slash);
+      else
+        std::cout << "Cannot move beyond root directory\n";
+    }
+    else
+    { // cd ./somefolder
+      std::string relative_path = argument.substr(2);
+      std::string new_path = WORKING_DIR + "/" + relative_path;
+
+      if (std::filesystem::is_directory(new_path))
+      {
+        WORKING_DIR = new_path;
+      }
+      else
+      {
+        std::cout << relative_path << ": Not a valid folder\n";
+      }
+    }
+  }
   else
-    std::cout << argument << ": No such file or directory\n";
+  {
+    // Check if it's an existing folder
+    std::string folder_path = WORKING_DIR + "/" + argument;
+    if (std::filesystem::is_directory(folder_path))
+      WORKING_DIR = folder_path;
+    else
+      std::cout << argument << ": Not a valid folder\n";
+  }
 }
 
 void handleTypeCommand(std::string command, std::string arguments, std::vector<std::string> path_vect)
