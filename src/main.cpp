@@ -16,8 +16,23 @@ std::vector<std::string> splitString(std::string string, char delimiter)
   return return_vector;
 }
 
+
 std::string cwd = std::filesystem::current_path();
 std::string WORKING_DIR = cwd.substr(0, cwd.length());
+
+void handleLs()
+{
+  for (const auto &entry : std::filesystem::directory_iterator(WORKING_DIR))
+  {
+    if (std::filesystem::is_directory(entry) || entry.path().filename().string().substr(0, 4) != ".git")
+    {
+      std::string path = entry.path().filename();
+      std::cout << path << ' ';
+    }
+  }
+  std::cout << '\n';
+}
+
 // static std::string WORKING_DIR = "/app";
 void handlePwd()
 {
@@ -26,7 +41,16 @@ void handlePwd()
 
 void handleCd(const std::string &argument)
 {
-  if (argument[0] == '/' && std::filesystem::exists(argument))
+  if (argument == "~")
+  {
+    // Change to the user's home directory
+    const char *home_dir = std::getenv("HOME");
+    if (home_dir)
+      WORKING_DIR = home_dir;
+    else
+      std::cout << "Home directory not found\n";
+  }
+  else if (argument[0] == '/' && std::filesystem::exists(argument))
     WORKING_DIR = argument;
   else if (argument[0] == '.')
   {
@@ -125,6 +149,9 @@ int main()
     else if (command == "cd")
     {
       handleCd(arguments);
+    }
+    else if (command == "ls") {
+      handleLs();
     }
     else
     {
