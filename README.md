@@ -9,6 +9,8 @@
 - Type builtin check for executable files
 - run a program in one of the PATH directory
 - pwd command
+- cd command
+- ls command
 ## How to run program:
 - download CMake
 - download vcpkg
